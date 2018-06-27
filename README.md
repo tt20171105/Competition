@@ -1,1 +1,2 @@
-# signate_kaggle
+# signateやkaggleに投稿したときのスクリプト
+2018/06/27時点でまだkaggleはやっていないので、今後やる予定。
