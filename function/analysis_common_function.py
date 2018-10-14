@@ -64,7 +64,7 @@ class stacking():
     
     def predict(self, model, x):
         predicted = model.predict(x)
-        if -1 < model.__class__.__name__.find("Classifier"):
+        if -1 < self.name.find("Classifier"):
             predicted_probability = 1 - model.predict_proba(x)[:,0]
         else:
             predicted_probability = predicted
@@ -75,8 +75,12 @@ class stacking():
     def fit(self, model, x, t, test_x):
         df_stacked_predict = pd.DataFrame()
         df_stacked_result  = pd.DataFrame()
-        start_time = datetime.now()
-        model_name = str(len(self.stack_train) + 1) + "_" + clf.__class__.__name__
+        start_time    = datetime.now()
+        if hasattr(model, "__name__"):
+            self.name = model.__name__
+        else:
+            self.name = model.__class__.__name__
+        model_name    = str(len(self.stack_train) + 1) + "_" + self.name
         # train
         skf = StratifiedKFold(n_splits     = self.cv,
                               random_state = self.seed)
