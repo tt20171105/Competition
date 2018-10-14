@@ -110,7 +110,7 @@ class stacking():
                                    model_name : test_stack})
         df_stacked_result = self._append(df_stacked_result, df_result)
         self._stack(df_stacked_predict, df_predict, df_stacked_result)
-        print("%s training end. time:%s" % (model.__class__.__name__, datetime.now()-start_time))
+        print("%s training end. time:%s" % (self.name, datetime.now()-start_time))
         
     def conversion_df(self):
         # each model result
