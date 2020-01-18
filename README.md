@@ -1,1 +1,1 @@
-# signateやkaggleに投稿したときのスクリプト
+# Scripts of kaggle and Signate
