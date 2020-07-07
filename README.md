@@ -1,1 +1,1 @@
-# Scripts of kaggle and Signate
+# Scripts of Kaggle and Signate
