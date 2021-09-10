@@ -1,0 +1,5 @@
+cl add bundle data-centric-utils//train.py
+cl add bundle data-centric-utils//label_book
+cl run :train.py :submission :label_book 'python train.py submission label_book' -n run-train --request-docker-image jupyter/tensorflow-notebook
+cl make run-train/predictions.json -n submission_attempt24
+cl edit submission_attempt24 --tags mnist-roman
