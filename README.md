@@ -2,7 +2,7 @@ Codes for competition
 
 Kaggle
  * Feb 15, 2022 - May 24, 2022 BirdCLEF 2022
- * Feb 19, 2022 - Apr 05, March Machine Learning Mania 2022 - MenÅfs
+ * Feb 19, 2022 - Apr 05, March Machine Learning Mania 2022 - Men's
  * Feb 19, 2022 - Apr 05, March Machine Learning Mania 2022 - Women's
  * Nov 22, 2021 - Feb 14, 2022 TensorFlow - Help Protect the Great Barrier Reef (Top 9%)
  * Sep 23, 2021 - Jan 14, 2022 PetFinder.my - Pawpularity Contest (Top 4%)
